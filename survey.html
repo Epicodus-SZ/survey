@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="survey">
+        <!-- Form item -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <!-- Dropdown item -->
+        <div class="form-group">
+          <label for="beverage">Favorite beverage</label>
+          <select class="form-control" id="beverage">
+            <option>Coffee</option>
+            <option>Tea</option>
+            <option>Kombucha</option>
+            <option>Water</option>
+          </select>
+        </div>
+        <!-- Radio item -->
+        <div class="radio">
+          <h2>Favorite Ice Cream</h2>
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies &amp; Cream
+            </label>
+        </div>
+        <!-- Calendar Input item -->
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+              <!-- Color Input item -->
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="output">
+      </div>
+    </div>
+  </body>
+</html>
